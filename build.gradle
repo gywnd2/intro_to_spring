@@ -16,7 +16,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'au.com.dius.pact.provider:junit5spring:4.3.2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
 }
 
 test {
